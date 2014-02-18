@@ -1,0 +1,68 @@
+﻿<div >
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Crafter.Partial.html'" ></div>
+    <div>
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Base Details</div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Condition:</span>
+            <span>{{locals.invitem.max_condition - locals.invitem.condition }} / {{locals.invitem.max_condition}}</span>
+        </div>
+    </div>
+    <div>
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Damage</div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Type:</span>
+            <span>{{locals.invitem.damage_type}}</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Min:</span>
+            <span>{{locals.invitem.min_damage}}</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Max:</span>
+            <span>{{locals.invitem.max_damage}}</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Wound:</span>
+            <span>{{locals.invitem.wound_ratio}}%</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Armor Piercing:</span>
+            <span>{{locals.invitem.armor_piercing}}</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Attack Speed:</span>
+            <span>{{locals.invitem.attack_speed}}</span>
+        </div>
+    </div>
+    <div >
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Range Modifiers</div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Point Blank:</span>
+            <span>{{locals.invitem.point_blank_accuracy}} @ {{locals.invitem.point_blank_range}}m</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Ideal:</span>
+            <span>{{locals.invitem.ideal_accuracy}} @ {{locals.invitem.ideal_range}}m</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Max:</span>
+            <span>{{locals.invitem.max_range_accuracy}} @ {{locals.invitem.max_range}}m</span>
+        </div>
+    </div>
+    <div >
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Special Attack Cost</div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Health:</span>
+            <span>{{locals.invitem.health_attack_cost}}</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Action:</span>
+            <span>{{locals.invitem.action_attack_cost}}</span>
+        </div>
+        <div>
+            <span class="col-md-3 text-right" style="font-weight: 400;">Mind:</span>
+            <span>{{locals.invitem.mind_attack_cost}}</span>
+        </div>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'" ></div>
+</div>

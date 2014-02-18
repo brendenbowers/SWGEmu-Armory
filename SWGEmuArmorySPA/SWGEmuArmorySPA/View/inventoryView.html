@@ -1,0 +1,23 @@
+﻿
+<style type="text/css">
+    .selectedInvItem {
+        background-color: #7D7D7D;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        color: white;
+    }
+</style>
+<div class="container-fluid">
+    <div class="col-md-5" style="height: 100%; overflow-x: hidden; border-right: 2px solid #eee;">
+        <div ng-repeat="invItem in characterDetails.Inventory" style="margin-top: 3px; margin-bottom: 3px; max-height: 75px; overflow:hidden;" ng-click="onInvItemClick(invItem)" ng-class="{selectedInvItem: isInvItemSelected(invItem)}">
+            <div>
+                <div style="font-size: 18px; font-weight:500;">{{invItem.display_name}}</div>
+                <div style="text-overflow: ellipsis; white-space: nowrap; overflow:hidden">{{invItem.description}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="container-fluid fill" scene-3d render-3d-complete fov="45" near="0.1" far="20000" mesh-path="{{ selectedInvItem | meshPath }}" cam-x="-0.5" cam-y="0.1" cam-z="0"></div>
+        <div with-locals locals-invitem="selectedInvItem" ng-include="selectedInvItem | modelTempaltePath"></div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+﻿<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Base Details</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Condition:</span>
+            <span>{{locals.invitem.max_condition - locals.invitem.condition }} / {{locals.invitem.max_condition}}</span>
+        </div>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Crafter.Partial.html'"></div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'"></div>
+</div>  

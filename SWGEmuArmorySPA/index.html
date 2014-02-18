@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html ng-app="SWGEmuArmorySPA">
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="SWGEmuArmorySPA/css/SWGIcons.css">
+    <script src="lib/angular-1.2.10/angular.js"></script>
+    <script src="lib/angular-1.2.10/angular-route.js"></script>
+    <script src="lib/bootstrap/js/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="lib/threejs/three.js"></script>
+    <script src="lib/threejs/OrbitControls.js"></script>
+    <script src="SWGEmuArmorySPA/Service/Services.js"></script>
+    <script src="SWGEmuArmorySPA/Controller/Controllers.js"></script>
+    <script src="SWGEmuArmorySPA/Filter/Filters.js"></script>
+    <script src="SWGEmuArmorySPA/Directive/Directives.js"></script>
+    <script src="SWGEmuArmorySPA/Service/AccountService.js"></script>
+    <script src="SWGEmuArmorySPA/Service/CharacterDetailsService.js"></script>
+    <script src="SWGEmuArmorySPA/Service/StructureDetailsService.js"></script>
+    <script src="SWGEmuArmorySPA/Controller/MainController.js"></script>
+    <script src="SWGEmuArmorySPA/Controller/CharacterDetailsController.js"></script>
+    <script src="SWGEmuArmorySPA/Controller/StructureDetailsController.js"></script>
+    <script src="SWGEmuArmorySPA/Filter/ReplaceFilter.js"></script>
+    <script src="SWGEmuArmorySPA/Filter/JoinFilter.js"></script>
+    <script src="SWGEmuArmorySPA/Filter/ModelTemplatePathFilter.js"></script>
+    <script src="SWGEmuArmorySPA/Filter/MeshPathFilter.js"></script>
+    <script src="SWGEmuArmorySPA/Directive/WithLocals.js"></script>
+    <script src="SWGEmuArmorySPA/Directive/ThreeJS.js"></script>
+    <script src="SWGEmuArmorySPA/SWGEmuArmorySPA.js"></script>
+    
+    <style type="text/css">
+        .show-scope-demo.ng-scope,
+        .show-scope-demo .ng-scope {
+            border: 1px solid red;
+            margin: 3px;
+        }
+
+        .white, .white a {
+            color: #fff;
+        }
+
+        .glyphicon-2x {
+            font-size: 36px;
+        }
+
+        body, html, .container-fluid {
+            height: 100%;
+        }
+
+        body {
+            padding-top: 70px;
+        }
+        .content-area {
+            overflow: auto;
+            height: 100%;
+        }
+
+        .fill {
+            width: 100%;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="mainController">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">SWGEmu Armory</a>
+            </div>
+            <ul class="nav navbar-nav" role="navigation">
+                <li ng-class="{active: isActive('/character')}">
+                    <a href="#character"><i class="swgicon-ledger"></i> Character</a>
+                </li>
+                <li ng-class="{active: isActive('/inventory')}">
+                    <a href="#inventory"><i class="swgicon-inventory"></i> Inventory</a>
+                </li>
+                <li ng-class="{active: isActive('/structures')}">
+                    <a href="#structures"><i class="swgicon-datapad"></i> Structures</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span ng-show="selectedCharacter">
+                            <span class="container-fluid col-md-10">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <i class="glyphicon glyphicon-question-sign glyphicon-2x white"></i>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="row">
+                                            {{selectedCharacter.firstname}}
+                                        </div>
+                                        <div class="row">
+                                            {{selectedCharacter.galaxy_name}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"><b class="caret"></b></div>
+                                </div>
+                            </span>
+                        </span>
+                        <span ng-hide="selectedCharacter">
+                            Select Character <b class="caret"></b>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-model="accounts" ng-repeat="character in accounts.characters">
+                            <div class="container col-md-10" ng-click="selectCharacter(character)">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <i class="glyphicon glyphicon-question-sign glyphicon-2x"></i>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="row">
+                                            {{character.firstname}}
+                                        </div>
+                                        <div class="row">
+                                            {{character.galaxy_name}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="content-area" ng-view></div>
+</body>
+</html>

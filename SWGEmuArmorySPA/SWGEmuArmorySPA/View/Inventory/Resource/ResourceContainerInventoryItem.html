@@ -1,0 +1,33 @@
+﻿<div class="container-fluid">
+    <div class="container-fluid">
+        <div style="font-weight: 700; border-bottom: 1px solid #eee;">Resource Details:</div>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-3">Type:</div>
+                <div >{{locals.invitem.classes | join:' >> ':'name' }} </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-3">Name:</div> 
+                <div >{{locals.invitem.name}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-md-3">Quantity:</div> 
+                <div >{{locals.invitem.count | number}}</div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px;">
+            <div class="container-fluid">
+                <div style="font-weight: 700; border-bottom: 1px solid #eee;">Resource Attributes:</div>
+                <div class="row" ng-repeat="attribute in locals.invitem.attributes">
+                    <div class="col-md-3 text-right">{{ attribute.name | replace:{'res\_': '', '_' : ' '} }}:</div>
+                    <div>{{attribute.value}}</div>
+                </div>
+            </div>
+        </div>
+        <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'"></div>
+    </div>
+</div>

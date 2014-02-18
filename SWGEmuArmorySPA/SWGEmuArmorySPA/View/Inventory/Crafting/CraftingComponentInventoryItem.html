@@ -1,0 +1,14 @@
+﻿<div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Crafter.Partial.html'"></div>
+    <div>
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Attributes</div>
+        <div ng-repeat="attribute in locals.invitem.attributes">
+            <div ng-hide="attribute.hidden">
+                <span class="col-md-4 text-right" style="font-weight: 400;" ng-hide="attribute.tite == '' || attribute.tite == 'null'">{{ attribute.tite | replace:replace:{ '_' : ' '} }}</span>
+                <span class="col-md-4 text-right" style="font-weight: 400;" ng-show="attribute.tite == ''">{{ attribute.id }}</span>
+                <span>{{attribute.value}}</span>
+            </div>
+        </div>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'"></div>
+</div>

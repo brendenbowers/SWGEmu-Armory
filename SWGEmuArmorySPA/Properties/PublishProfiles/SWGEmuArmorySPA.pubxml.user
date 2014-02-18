@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>Z:\var\www</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/SWGEmuArmorySPA.dll">
+      <publishTime>01/30/2014 15:11:45</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>01/30/2014 15:04:35</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-animate.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-animate.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-animate.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-cookies.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-cookies.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-cookies.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-csp.css">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-loader.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-loader.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-loader.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-mocks.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-resource.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-resource.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-resource.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-route.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-route.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-route.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-sanitize.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-sanitize.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-sanitize.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-scenario.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-touch.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-touch.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular-touch.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular.min.js">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/angular.min.js.map">
+      <publishTime>01/30/2014 11:59:51</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_af-na.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_af-za.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_af.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_am-et.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_am.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-001.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-ae.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-bh.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-dz.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-eg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-iq.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-jo.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-kw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-lb.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-ly.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-ma.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-om.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-qa.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-sa.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-sd.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-sy.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-tn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar-ye.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ar.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_bg-bg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_bg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_bn-bd.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_bn-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_bn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ca-ad.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ca-es.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ca.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_cs-cz.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_cs.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_da-dk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_da.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de-at.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de-be.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de-ch.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de-de.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de-li.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de-lu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_de.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_el-cy.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_el-gr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_el.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-as.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-au.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-bb.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-be.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-bm.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-bw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-bz.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-ca.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-dsrt-us.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-dsrt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-fm.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-gb.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-gu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-gy.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-hk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-ie.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-iso.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-jm.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-mh.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-mp.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-mt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-mu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-na.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-nz.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-ph.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-pk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-pr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-pw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-sg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-tc.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-tt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-um.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-us.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-vg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-vi.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-za.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en-zw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_en.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-419.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-ar.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-bo.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-cl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-co.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-cr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-do.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-ea.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-ec.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-es.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-gq.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-gt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-hn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-ic.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-mx.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-ni.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-pa.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-pe.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-pr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-py.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-sv.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-us.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-uy.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es-ve.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_es.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_et-ee.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_et.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_eu-es.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_eu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fa-af.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fa-ir.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fa.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fi-fi.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fi.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fil-ph.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fil.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-be.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-bf.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-bi.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-bj.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-bl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-ca.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-cd.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-cf.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-cg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-ch.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-ci.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-cm.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-dj.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-fr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-ga.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-gf.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-gn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-gp.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-gq.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-km.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-lu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-mc.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-mf.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-mg.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-ml.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-mq.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-ne.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-re.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr-yt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_fr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_gl-es.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_gl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_gsw-ch.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_gsw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_gu-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_gu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_he-il.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_he.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_hi-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_hi.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_hr-hr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_hr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_hu-hu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_hu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_id-id.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_id.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_is-is.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_is.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_it-it.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_it-sm.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_it.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_iw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ja-jp.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ja.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_kn-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_kn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ko-kr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ko.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ln-cd.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ln.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_lt-lt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_lt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_lv-lv.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_lv.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ml-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ml.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_mr-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_mr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ms-my.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ms.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_mt-mt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_mt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_nl-cw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_nl-nl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_nl-sx.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_nl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_no.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_or-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_or.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_pl-pl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_pl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_pt-br.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_pt-pt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_pt.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ro-ro.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ro.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ru-ru.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ru.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sk-sk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sl-si.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sq-al.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sq.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sr-cyrl-rs.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sr-latn-rs.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sv-se.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sv.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sw-tz.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_sw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ta-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ta.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_te-in.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_te.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_th-th.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_th.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_tl.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_tr-tr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_tr.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_uk-ua.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_uk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ur-pk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_ur.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_vi-vn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_vi.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zh-cn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zh-hans-cn.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zh-hk.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zh-tw.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zh.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zu-za.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/angular-1.2.10/i18n/angular-locale_zu.js">
+      <publishTime>01/30/2014 12:00:28</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap-theme.css">
+      <publishTime>01/30/2014 13:14:15</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>01/30/2014 13:14:15</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>01/30/2014 13:14:15</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.css">
+      <publishTime>01/30/2014 13:14:15</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.css.map">
+      <publishTime>01/30/2014 13:14:15</publishTime>
+    </File>
+    <File Include="lib/bootstrap/css/bootstrap.min.css">
+      <publishTime>01/30/2014 13:14:15</publishTime>
+    </File>
+    <File Include="lib/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/30/2014 13:14:25</publishTime>
+    </File>
+    <File Include="lib/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/30/2014 13:14:25</publishTime>
+    </File>
+    <File Include="lib/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/30/2014 13:14:25</publishTime>
+    </File>
+    <File Include="lib/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/30/2014 13:14:25</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.js">
+      <publishTime>01/30/2014 13:14:38</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/bootstrap.min.js">
+      <publishTime>01/30/2014 13:14:38</publishTime>
+    </File>
+    <File Include="lib/bootstrap/js/ui-bootstrap-tpls-0.10.0.js">
+      <publishTime>01/30/2014 13:39:21</publishTime>
+    </File>
+    <File Include="SWGEmuArmorySPA/Controller/AccountController.js">
+      <publishTime>01/30/2014 15:04:35</publishTime>
+    </File>
+    <File Include="SWGEmuArmorySPA/Controller/Controllers.js">
+      <publishTime>01/30/2014 14:34:32</publishTime>
+    </File>
+    <File Include="SWGEmuArmorySPA/Service/AccountService.js">
+      <publishTime>01/30/2014 15:08:49</publishTime>
+    </File>
+    <File Include="SWGEmuArmorySPA/Service/Services.js">
+      <publishTime>01/30/2014 13:57:13</publishTime>
+    </File>
+    <File Include="SWGEmuArmorySPA/SWGEmuArmorySPA.js">
+      <publishTime>01/30/2014 14:01:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

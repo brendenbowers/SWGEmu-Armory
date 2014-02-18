@@ -1,0 +1,19 @@
+﻿<div class="container-fluid">
+    <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Pharmaceutical Infromation</div>
+    <div class="row">
+        <span class="col-md-4 text-right" style="font-weight: 400;">Uses Left:</span>
+        <span>{{locals.invitem.use_count}}</span>
+    </div>
+    <div class="row" ng-hide="locals.invitem.effectiveness == 0">
+        <span class="col-md-4 text-right" style="font-weight: 400;">Effectiveness:</span>
+        <span>{{locals.invitem.effectiveness}}</span>
+    </div>
+    <div class="row" ng-hide="locals.invitem.area == 0">
+        <span class="col-md-4 text-right" style="font-weight: 400;">Area of Effect:</span>
+        <span>{{locals.invitem.area}}</span>
+    </div>
+    <div class="row" ng-hide="locals.invitem.medicine_required == 0">
+        <span class="col-md-4 text-right" style="font-weight: 400;">Medicine Required:</span>
+        <span>{{locals.invitem.medicine_required}}</span>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+﻿<div class="container-fluid fill">
+    <nav class="navbar nav-pills nav-stacked navbar-inverse  col-md-3">
+        <div class="navbar-brand fill" style="border-bottom: solid 1px #999; min-height:40px;">
+            <span>Structures</span>
+            <span class="navbar-right badge">{{ characterDetails.max_lots - characterDetails.remaining_lots }} / {{ characterDetails.max_lots }}</span>
+        </div>
+        <ul class="nav navbar-nav" role="navigation">
+            <li ng-repeat="structure in characterDetails.Structures" ng-class="{active: isSelectedStructure(structure)}" ng-click="onStructureSeledcted(structure)" class="fill">
+                <a href="">
+                    <div class="row">{{structure.display_name}}</div>
+                    <div ng-hide="structure.display_name == structure.resolved_object_name">({{structure.resolved_object_name}})</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="col-md-8">
+        <div class="container-fluid fill" scene-3d render-3d-complete fov="45" near="0.1" far="20000" mesh-path="{{ selectedStructureDetails | meshPath }}" cam-x="-0.5" cam-y="0.1" cam-z="0"></div>
+        <div>
+            <div>
+                <div style="border-bottom: 1px solid #eee; font-weight: 700;">Base Details</div>
+                <div>
+                    <span class="col-md-3 text-right" style="font-weight: 400;">Type:</span>
+                    <span>{{ selectedStructureDetails.resolved_object_name }}</span>
+                </div>
+                <div>
+                    <span class="col-md-3 text-right" style="font-weight: 400;">Location:</span>
+                    <span>{{ selectedStructureDetails.world_x | number:2 }} {{ selectedStructureDetails.world_y | number:2 }} {{ selectedStructureDetails.world_z | number:2 }} ({{ selectedStructureDetails.zone }})</span>
+                </div>
+                <div>
+                    <span class="col-md-3 text-right" style="font-weight: 400;">Maintenance:</span>
+                    <span>{{ selectedStructureDetails.maintenance }}</span>
+                </div>
+                <div>
+                    <span class="col-md-3 text-right" style="font-weight: 400;">Integrity:</span>
+                    <span>{{ selectedStructureDetails.decay_percent }}</span>
+                </div>
+                <div ng-hide="selectedStructure.power == 0">
+                    <span class="col-md-3 text-right" style="font-weight: 400;">Available Power:</span>
+                    <span>{{ selectedStructureDetails.power }}</span>
+                </div>
+                <div>
+                    <span class="col-md-3 text-right" style="font-weight: 400;">Lot Size:</span>
+                    <span>{{ selectedStructureDetails.lot_size }}</span>
+                </div>
+            </div>
+        </div>
+        <div with-locals locals-structure="selectedStructureDetails" ng-include="selectedStructureDetails | modelTempaltePath"></div>
+    </div>
+</div>

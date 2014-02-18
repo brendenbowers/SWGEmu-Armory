@@ -1,0 +1,31 @@
+﻿<div>
+    <div>
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Schematic Details</div>
+        <div>
+            <span class="col-md-4 text-right" style="font-weight: 400;">Manufacture Limit:</span>
+            <span>{{locals.invitem.manufacture_limit}}</span>
+        </div>
+    </div>
+    <div>
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Resources &amp; Components</div>
+        <div ng-repeat="blueprint in locals.invitem.blueprint_entries">
+            <div>
+                <span class="col-md-4 text-right" style="font-weight: 400;">Type:</span>
+                <span>{{ blueprint.type }}</span>
+            </div>
+            <div>
+                <span class="col-md-4 text-right" style="font-weight: 400;">Item:</span>
+                <span>{{ blueprint.display_name }} <span ng-hide="blueprint.serial == ''">({{ blueprint.serial }})</span></span>
+            </div>
+            <div>
+                <span class="col-md-4 text-right" style="font-weight: 400;">Quantity:</span>
+                <span>{{ blueprint.quantity }} <span ng-hide="blueprint.serial == true">(Identical)</span></span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="border-bottom: 1px solid #eee; font-weight: 700;">Prototype Details</div>
+        <div with-locals locals-invitem="locals.invitem.prototype_details" ng-include="locals.invitem.prototype_details | modelTempaltePath"></div>
+    </div>
+    
+</div>

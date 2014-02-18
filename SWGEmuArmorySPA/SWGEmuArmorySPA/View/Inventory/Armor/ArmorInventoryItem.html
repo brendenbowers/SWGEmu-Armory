@@ -1,0 +1,79 @@
+﻿<div class="container-fluid">
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Crafter.Partial.html'"></div>
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Base Details</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Armor Rating:</span>
+            <span >{{locals.invitem.rating}}</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Condition:</span>
+            <span >{{locals.invitem.max_condition - locals.invitem.condition }} / {{locals.invitem.max_condition}}</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Hit Location(s):</span>
+            <span ng-repeat="hit_location in locals.invitem.hit_locations">{{hit_location}}</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Special Protection</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Kinetic:</span>
+            <span >{{locals.invitem.kinetic}}%</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Stun:</span>
+            <span >{{locals.invitem.stun}}%</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Effectiveness</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Energy:</span>
+            <span >{{locals.invitem.energy}}%</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Electricity:</span>
+            <span >{{locals.invitem.electricity}}%</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Blast:</span>
+            <span >{{locals.invitem.blast}}%</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Heat:</span>
+            <span >{{locals.invitem.heat}}%</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Cold:</span>
+            <span >{{locals.invitem.cold}}%</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Acid:</span>
+            <span >{{locals.invitem.acid}}%</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Vulnerability</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Lighsaber:</span>
+            <span >{{locals.invitem.lighsaber}}%</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Encumbrance</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Health:</span>
+            <span >{{locals.invitem.health_encumberance}}</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Action:</span>
+            <span >{{locals.invitem.action_encumberance}}</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Mind:</span>
+            <span >{{locals.invitem.mind_encumberance}}</span>
+        </div>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'"></div>
+ </div>

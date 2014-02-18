@@ -1,0 +1,12 @@
+﻿<div class="container-fluid">
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Crafter.Partial.html'"></div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Pharmaceutical/PharmaceuticalBase.Partial.html'"></div>
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Wound Infromation</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Attribute:</span>
+            <span>{{locals.invitem.attribute}}</span>
+        </div>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'"></div>
+</div>

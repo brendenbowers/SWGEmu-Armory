@@ -1,0 +1,16 @@
+﻿<div>
+    <div style="border-bottom: 1px solid #eee; font-weight: 700;">Operational Infromation</div>
+    <div>
+        <span class="col-xs-2 text-right" style="font-weight: 400;">Extraction Rate:</span>
+        <span>{{locals.structure.extraction_rate}}</span>
+    </div>
+    <div>
+        <span class="col-xs-2 text-right" style="font-weight: 400;">Actual Rate:</span>
+        <span>{{locals.structure.actual_rate}}</span>
+    </div>
+    <div>
+        <span class="col-xs-2 text-right" style="font-weight: 400;">Operating:</span>
+        <span>{{locals.structure.operating}}</span>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Structure/HorizontalItemsList.Partial.html'" with-locals locals-items="locals.structure.hopper_items" locals-itemsheader="'Harvested Resources:'" locals-selectedbuildinginvitem="null"></div>
+</div>

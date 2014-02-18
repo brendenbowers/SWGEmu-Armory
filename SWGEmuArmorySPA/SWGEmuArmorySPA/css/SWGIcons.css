@@ -1,0 +1,49 @@
+﻿
+
+
+/* icons */
+[class^="swgicon-"],
+[class*=" swgicon-"] {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../Img/ui_rebel_icons.png");
+  background-position: 24px 24px;
+  background-repeat: no-repeat;
+}
+[class^="swgicon-"]:last-child,
+[class*=" swgicon-"]:last-child {
+  *margin-left: 0;
+}
+
+.swgicon-dark {
+    background-image: url("../Img/ui_space_icons.png");
+}
+
+/* icons code below */
+.swgicon-mail {
+    background-position: 0 -5px;
+}
+
+.swgicon-ledger {
+    background-position: -27px -5px;
+}
+
+.swgicon-group {
+    background-position: -48px -5px;
+}
+
+.swgicon-datapad {
+    background-position: -72px -5px;
+}
+
+.swgicon-skills {
+    background-position: -96px -5px;
+}
+
+.swgicon-inventory {
+    background-position: -120px -5px;
+}

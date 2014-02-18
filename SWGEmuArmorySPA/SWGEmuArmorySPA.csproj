@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3F44F91-7883-4FEF-9005-EAB194853688}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SWGEmuArmorySPA</RootNamespace>
+    <AssemblyName>SWGEmuArmorySPA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="lib\angular-1.2.10\angular-animate.js" />
+    <Content Include="lib\angular-1.2.10\angular-animate.min.js" />
+    <Content Include="lib\angular-1.2.10\angular-cookies.js" />
+    <Content Include="lib\angular-1.2.10\angular-cookies.min.js" />
+    <Content Include="lib\angular-1.2.10\angular-csp.css" />
+    <Content Include="lib\angular-1.2.10\angular-loader.js" />
+    <Content Include="lib\angular-1.2.10\angular-loader.min.js" />
+    <Content Include="lib\angular-1.2.10\angular-mocks.js" />
+    <Content Include="lib\angular-1.2.10\angular-resource.js" />
+    <Content Include="lib\angular-1.2.10\angular-resource.min.js" />
+    <Content Include="lib\angular-1.2.10\angular-route.js" />
+    <Content Include="lib\angular-1.2.10\angular-route.min.js" />
+    <Content Include="lib\angular-1.2.10\angular-sanitize.js" />
+    <Content Include="lib\angular-1.2.10\angular-sanitize.min.js" />
+    <Content Include="lib\angular-1.2.10\angular-scenario.js" />
+    <Content Include="lib\angular-1.2.10\angular-touch.js" />
+    <Content Include="lib\angular-1.2.10\angular-touch.min.js" />
+    <Content Include="lib\angular-1.2.10\angular.js" />
+    <Content Include="lib\angular-1.2.10\angular.min.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_af-na.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_af-za.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_af.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_am-et.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_am.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-001.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-ae.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-bh.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-dz.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-eg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-iq.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-jo.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-kw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-lb.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-ly.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-ma.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-om.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-qa.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-sa.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-sd.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-sy.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-tn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar-ye.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ar.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_bg-bg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_bg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_bn-bd.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_bn-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_bn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ca-ad.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ca-es.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ca.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_cs-cz.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_cs.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_da-dk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_da.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de-at.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de-be.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de-ch.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de-de.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de-li.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de-lu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_de.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_el-cy.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_el-gr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_el.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-as.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-au.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-bb.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-be.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-bm.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-bw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-bz.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-ca.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-dsrt-us.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-dsrt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-fm.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-gb.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-gu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-gy.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-hk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-ie.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-iso.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-jm.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-mh.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-mp.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-mt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-mu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-na.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-nz.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-ph.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-pk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-pr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-pw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-sg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-tc.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-tt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-um.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-us.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-vg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-vi.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-za.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en-zw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_en.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-419.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-ar.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-bo.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-cl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-co.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-cr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-do.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-ea.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-ec.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-es.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-gq.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-gt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-hn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-ic.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-mx.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-ni.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-pa.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-pe.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-pr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-py.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-sv.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-us.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-uy.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es-ve.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_es.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_et-ee.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_et.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_eu-es.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_eu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fa-af.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fa-ir.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fa.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fi-fi.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fi.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fil-ph.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fil.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-be.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-bf.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-bi.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-bj.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-bl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-ca.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-cd.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-cf.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-cg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-ch.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-ci.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-cm.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-dj.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-fr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-ga.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-gf.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-gn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-gp.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-gq.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-km.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-lu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-mc.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-mf.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-mg.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-ml.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-mq.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-ne.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-re.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr-yt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_fr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_gl-es.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_gl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_gsw-ch.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_gsw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_gu-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_gu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_he-il.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_he.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_hi-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_hi.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_hr-hr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_hr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_hu-hu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_hu.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_id-id.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_id.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_is-is.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_is.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_it-it.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_it-sm.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_it.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_iw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ja-jp.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ja.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_kn-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_kn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ko-kr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ko.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ln-cd.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ln.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_lt-lt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_lt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_lv-lv.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_lv.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ml-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ml.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_mr-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_mr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ms-my.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ms.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_mt-mt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_mt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_nl-cw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_nl-nl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_nl-sx.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_nl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_no.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_or-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_or.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_pl-pl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_pl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_pt-br.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_pt-pt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_pt.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ro-ro.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ro.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ru-ru.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ru.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sk-sk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sl-si.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sq-al.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sq.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sr-cyrl-rs.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sr-latn-rs.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sv-se.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sv.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sw-tz.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_sw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ta-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ta.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_te-in.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_te.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_th-th.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_th.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_tl.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_tr-tr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_tr.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_uk-ua.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_uk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ur-pk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_ur.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_vi-vn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_vi.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zh-cn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zh-hans-cn.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zh-hk.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zh-tw.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zh.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zu-za.js" />
+    <Content Include="lib\angular-1.2.10\i18n\angular-locale_zu.js" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\threejs\OrbitControls.js" />
+    <Content Include="lib\threejs\three.js" />
+    <Content Include="lib\threejs\TrackballControls.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_banner_assoc_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_concrete_a_fallback.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_concrete_b_fallback.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_cutout_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_stair_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_tile_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_trim_c.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\all_vent_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\armor_composite_chest_plate.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\armor_composite_s01_chest_plate_f.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\armor_kashyyykian_hunting_feather.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\armor_kashyyykian_hunting_leggings.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\armor_kashyyykian_hunting_leggings_wke_f.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\axe_2h_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\bio_gunk.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\bio_panels_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\blacksun_hack.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_gen_energy_gas.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_gen_energy_gas_sml.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_gen_inorganic_chemicals.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_gen_inorganic_chemicals_sml.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_gen_inorganic_minerals.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_gen_inorganic_minerals_sml.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_man_items_sm.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\con_mfg_crates_s02.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\corellia_concrete_a_unlined.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\corellia_roof_metal_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\corellia_underhanga_trim.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\corellia_verticala_trim.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\corl_vent_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\eqp_tool_datapad.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\eqp_tool_datapad.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\eqp_tool_instrument_calibrator.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\eqp_tool_instrument_calibrator.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\flora_undergrowth_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\flora_veg_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\flora_veg_b.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\fusion_generator_cylindercap.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\fusion_generator_cylinders.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\fusion_generator_cylinders_b.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\fusion_generator_misc.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\glass_small_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\heavy_axe_head.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_factory_item.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_factory_machine.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_factory_organic.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_flora_farm_s01_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_flora_small.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_flora_small.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_flora_small_alpha.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_flora_small_disc.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_gas_med.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_gas_med.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_gas_med_a1.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_gray.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_gray_base.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_gray_cap.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_gray_decal.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_gray_vents.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_horz_ore_profile.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_horz_streaks.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_miner.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_miner2.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_ming_trim.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_switch_on.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_metl_tank.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_min_gas_s01_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_min_liquid_s01_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_min_moisture_s01_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_min_s01_u1.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_min_s02_u1.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_mobile_chem_refinery.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_mobile_chem_refinery.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_mobile_gas_refinery.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_mobile_gas_refinery.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_mobile_ore_refinery.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_mobile_ore_refinery.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_moisture_lrg.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_moisture_lrg.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_moisture_lrg_a1.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_moisture_med.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_moisture_med.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_photo_bio_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_photo_bio_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_photo_bio_u0_glass.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_pow_fusion_ion_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_pow_solar_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_pow_wind_u0.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_pow_wind_u0.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_pow_wind_u0_dark_base.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_pow_wind_u0_sail.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_solar_plant_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_solar_plant_b.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_solar_plant_c.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_all_techyjunk_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_door.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_glass.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_metal_a1.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_metal_a2.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_metal_a3.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_metal_a4.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_factory_substance.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ins_ming_conduit.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\intr_medicallight_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\kashyyk_sword.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\maul_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\metl_brown_rough.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\metl_jnkshp_trim.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\metl_watto_grate.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_grill_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_panels_b.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_panels_c.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_panels_d.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_panels_e.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_tank_grey.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_tank_yellow.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\mine_tech_b.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_all_assoc_hall_civ_s01.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_all_house_lg_s01_fp1.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_corl_floor_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_tato_house_lg_s01_fp1.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_tato_house_sm_s01_fp1.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_tato_house_sm_s02_fp1.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\ply_window_blocks_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\rebl_console_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\sabre_anakin.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stco_brown.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stco_cantina_exterior_stepped_fallback.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stco_cream_middle.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stco_filler_b_base.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stco_filler_d_base.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stco_smooth_fallback.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\stone_knife.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_concreteb.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_fielda.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_floor_tilea.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_roof_trim_c.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_tech_c.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_trimb.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tato_trimc.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tatt_door1.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tatt_ming_hydro_vapwhite.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tatt_ming_hydro_vap_blackstreak.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\tatt_ming_hydro_vap_metalpanel.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\turret_detail_a.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\turret_detail_b.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\untitled.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wke_alpha.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wke_eye.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wke_mouth.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wke_m_body_s07.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wood_melee.png" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_2h_sword_axe_s01.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_2h_sword_blacksun_hack.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_2h_sword_lightsaber_anakin.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_2h_sword_maul_s01.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_axe_heavy_duty.js" />
+    <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_knife_stone.js" />
+    <Content Include="SWGEmuArmorySPA\css\SWGIcons.css" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\bootstrap\js\ui-bootstrap-tpls-0.10.0.js" />
+    <Content Include="SWGEmuArmorySPA\Controller\MainController.js" />
+    <Content Include="SWGEmuArmorySPA\Controller\CharacterDetailsController.js" />
+    <Content Include="SWGEmuArmorySPA\Controller\Controllers.js" />
+    <Content Include="SWGEmuArmorySPA\Controller\StructureDetailsController.js" />
+    <Content Include="SWGEmuArmorySPA\Directive\Directives.js" />
+    <Content Include="SWGEmuArmorySPA\Directive\ThreeJS.js" />
+    <Content Include="SWGEmuArmorySPA\Directive\WithLocals.js" />
+    <Content Include="SWGEmuArmorySPA\Filter\Filters.js" />
+    <Content Include="SWGEmuArmorySPA\Filter\JoinFilter.js" />
+    <Content Include="SWGEmuArmorySPA\Filter\MeshPathFilter.js" />
+    <Content Include="SWGEmuArmorySPA\Filter\ReplaceFilter.js" />
+    <Content Include="SWGEmuArmorySPA\Filter\ModelTemplatePathFilter.js" />
+    <Content Include="SWGEmuArmorySPA\Img\Placeholder_portrait.svg" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_rebel_icons.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_aluminum.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_bone.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_cereal.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_copper.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_creature_food.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_creature_resources.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_creature_structural.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_energy.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_flora_resources.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_flora_structural.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_fuel_petrochem_liquid.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_fuel_petrochem_solid.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_gas.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_gas_inert.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_gas_reactive.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_gemstone.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_hide.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_inorganic.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_iron.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_liquid_vapors.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_meat.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_metal.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_metal_ferrous.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_metal_nonferrous.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_milk.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_mineral.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_ore.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_ore_carbonate.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_ore_igneous.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_ore_sedimentary.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_ore_siliclastic.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_organic.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_petrochem_inert.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_radioactive.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_seeds.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_steel.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_underground_liquid.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_res_water.png" />
+    <Content Include="SWGEmuArmorySPA\Img\ui_space_icons.png" />
+    <Content Include="SWGEmuArmorySPA\Service\AccountService.js" />
+    <Content Include="SWGEmuArmorySPA\Service\CharacterDetailsService.js" />
+    <Content Include="SWGEmuArmorySPA\Service\Services.js" />
+    <Content Include="SWGEmuArmorySPA\Service\StructureDetailsService.js" />
+    <Content Include="SWGEmuArmorySPA\SWGEmuArmorySPA.js" />
+    <Content Include="SWGEmuArmorySPA\View\characterView.html" />
+    <Content Include="SWGEmuArmorySPA\View\inventoryView.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Armor\ArmorInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\CharacterInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Crafter.Partial.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Crafting\CraftingComponentInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Crafting\ManufacturingSchematicInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\FactoryCrate\FactoryCrateInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\DOTPackInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\EnhancePackInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\PharmaceuticalBase.Partial.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\PharmaceuticalInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\RevivePackInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\RnagedStimPackInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Pharmaceutical\WoundPackInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Resource\ResourceContainerInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Weapon\WeaponInventoryItem.html" />
+    <Content Include="SWGEmuArmorySPA\View\structuresView.html" />
+    <Content Include="SWGEmuArmorySPA\View\Structure\BuildingStructureItemDetails.html" />
+    <Content Include="SWGEmuArmorySPA\View\Structure\FactoryInstallationItemDeatils.html" />
+    <Content Include="SWGEmuArmorySPA\View\Structure\HarvesterInstallationItemDetails.html" />
+    <Content Include="SWGEmuArmorySPA\View\Structure\HorizontalItemsList.Partial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\angular-1.2.10\angular-animate.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular-cookies.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular-loader.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular-resource.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular-route.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular-sanitize.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular-touch.min.js.map" />
+    <Content Include="lib\angular-1.2.10\angular.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="lib\bootstrap\css\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\SWGEmuArmorySPA.pubxml" />
+    <Content Include="SWGEmuArmorySPA\View\Inventory\Details.Partial.html" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58731</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58731/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

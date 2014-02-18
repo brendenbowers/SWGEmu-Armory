@@ -1,0 +1,37 @@
+﻿<style type="text/css">
+    .hscroll {
+        height: 90px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .hscrollcontainer {
+        width: 90000px;
+    }
+
+        .hscrollcontainer div {
+            display: inline;
+            float: left;
+            width: 250px;
+        }
+
+    .selectedInvItem {
+        background-color: #7D7D7D;
+        padding-bottom: 3px;
+        padding-top: 3px;
+        color: white;
+    }
+</style>
+<div>
+    <div style="border-bottom: 1px solid #eee; font-weight: 700;">{{ locals.itemsheader }}</div>
+    <div class="container-fluid hscroll">
+        <div class="hscrollcontainer">
+            <div ng-repeat="invItem in locals.items" ng-click="locals.selectedbuildinginvitem = invItem" ng-class="{ selectedInvItem: invItem == locals.selectedbuildinginvitem }">
+                <div style="font-size: 18px; font-weight:500; width: 200px;">{{invItem.display_name}}</div>
+                <div style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 200px;">{{invItem.description}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fill" scene-3d render-3d-complete fov="45" near="0.0" far="500" mesh-path="{{ locals.selectedbuildinginvitem | meshPath }}" cam-x="-0.5" cam-y="0.1" cam-z="0"></div>
+    <div with-locals locals-invitem="locals.selectedbuildinginvitem" ng-include="locals.selectedbuildinginvitem | modelTempaltePath"></div>
+</div>

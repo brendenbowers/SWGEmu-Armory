@@ -1,0 +1,24 @@
+﻿<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Crate Details</div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Items Count:</span>
+            <span>{{ locals.invitem.count }} / {{locals.invitem.max_items}}</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Crafter Name:</span>
+            <span>{{locals.invitem.crafter_name}}</span>
+        </div>
+        <div class="row">
+            <span class="col-md-4 text-right" style="font-weight: 400;">Serial:</span>
+            <span>{{locals.invitem.serial_number}}</span>
+        </div>
+    </div>
+    <div ng-include="'/SWGEmuArmorySPA/View/Inventory/Details.Partial.html'"></div>
+
+    <div class="container-fluid" style="margin-top: 10px;">
+        <div class="row" style="border-bottom: 1px solid #eee; font-weight: 700;">Crate Item Details</div>
+        <div class="row text-center" style="font-weight: 700;">{{locals.invitem.display_name}}</div>
+        <div with-locals locals-invitem="locals.invitem.contained_items" ng-include="locals.invitem.contained_items | modelTempaltePath"></div>  
+    </div>
+</div>
