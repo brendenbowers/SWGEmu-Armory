@@ -6,7 +6,7 @@
             <h3 ng-hide="characterDetails.title == ''">{{ characterDetails.title }}</h3>
         </div>
         <div class="container-fluid">
-            <img ng-src="/SWGEmuArmorySPA/Img/Placeholder_portrait.svg">
+            <div class="container-fluid fill" scene-3d render-3d-complete fov="45" near="0.1" far="20000" mesh-path="{{ characterDetails.appearance_file | meshPath }}" cam-x="-0.5" cam-y="0.1" cam-z="0"></div>
         </div>
     </div>
     <div class="col-md-5" style="overflow-y: auto; max-height: 100%;">

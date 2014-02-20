@@ -124,6 +124,12 @@ module.directive('scene3d', function ($log, $timeout, $rootScope) {
 
                         scope.controls = new THREE.OrbitControls(scope.camera, scope.renderer.domElement);
 
+                        //scope.controls = new THREE.TrackballControls(scope.camera, scope.renderer.domElement);
+
+                        if (angular.isDefined(loadedData.objects.Empty)) {
+                            scope.controls.center.set(loadedData.objects.Empty.position.x, loadedData.objects.Empty.position.y, loadedData.objects.Empty.position.z);
+                        }
+                        
 
                         onRenderElmResize(scope.staticWidth, scope.staticHeight, scope.renderer, scope.camera, scope.rendererEle);
                         animate(scope.renderer, scope.controls, scope.scene, scope.camera);
