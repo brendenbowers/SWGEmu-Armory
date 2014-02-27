@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="SWGEmuArmorySPA">
+<html id="#application-root" ng-app="SWGEmuArmorySPA">
 <head>
     <title></title>
 
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="SWGEmuArmorySPA/css/SWGIcons.css">
     <script src="lib/angular-1.2.10/angular.js"></script>
     <script src="lib/angular-1.2.10/angular-route.js"></script>
+    <script src="lib/angualr-local-storage/angular-local-storage.js"></script>
     <script src="lib/bootstrap/js/ui-bootstrap-tpls-0.10.0.js"></script>
     <script src="lib/threejs/three.js"></script>
     <script src="lib/threejs/OrbitControls.js"></script>
@@ -20,9 +21,11 @@
     <script src="SWGEmuArmorySPA/Service/AccountService.js"></script>
     <script src="SWGEmuArmorySPA/Service/CharacterDetailsService.js"></script>
     <script src="SWGEmuArmorySPA/Service/StructureDetailsService.js"></script>
+    <script src="SWGEmuArmorySPA/Service/TokenService.js"></script>
     <script src="SWGEmuArmorySPA/Controller/MainController.js"></script>
     <script src="SWGEmuArmorySPA/Controller/CharacterDetailsController.js"></script>
     <script src="SWGEmuArmorySPA/Controller/StructureDetailsController.js"></script>
+    <script src="SWGEmuArmorySPA/Controller/AuthenticationController.js"></script>
     <script src="SWGEmuArmorySPA/Filter/ReplaceFilter.js"></script>
     <script src="SWGEmuArmorySPA/Filter/JoinFilter.js"></script>
     <script src="SWGEmuArmorySPA/Filter/ModelTemplatePathFilter.js"></script>
@@ -30,6 +33,7 @@
     <script src="SWGEmuArmorySPA/Directive/WithLocals.js"></script>
     <script src="SWGEmuArmorySPA/Directive/ThreeJS.js"></script>
     <script src="SWGEmuArmorySPA/SWGEmuArmorySPA.js"></script>
+
     
     <style type="text/css">
         .show-scope-demo.ng-scope,
@@ -103,28 +107,21 @@
                                     <div class="col-md-1"><b class="caret"></b></div>
                                 </div>
                             </span>
-                        </span>
+                        </span> 
                         <span ng-hide="selectedCharacter">
                             Select Character <b class="caret"></b>
                         </span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li ng-model="accounts" ng-repeat="character in accounts.characters">
-                            <div class="container col-md-10" ng-click="selectCharacter(character)">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <i class="glyphicon glyphicon-question-sign glyphicon-2x"></i>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="row">
-                                            {{character.firstname}}
-                                        </div>
-                                        <div class="row">
-                                            {{character.galaxy_name}}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <li ng-hide="loggedIn">
+                            <a href="http://localhost:59798/token?response_type=token&client_id=swgemu_armory" target="_blank">Login</a>
+                        </li>
+                        <li ng-show="loggedIn" ng-model="accounts" ng-repeat="character in accounts.characters">
+                            <a href="" ng-click="selectCharacter(character)">{{character.firstname}} ({{character.galaxy_name}})</a>
+                         </li>
+                        <li ng-show="loggedIn" class="divider"></li>
+                        <li ng-show="loggedIn">
+                            <a href="" ng-click="logout()">Logout</a>
                         </li>
                     </ul>
                 </li>

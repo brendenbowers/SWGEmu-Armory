@@ -41,6 +41,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="lib\angualr-local-storage\angular-local-storage.js" />
     <Content Include="lib\angular-1.2.10\angular-animate.js" />
     <Content Include="lib\angular-1.2.10\angular-animate.min.js" />
     <Content Include="lib\angular-1.2.10\angular-cookies.js" />
@@ -474,6 +475,7 @@
     <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_2h_sword_maul_s01.js" />
     <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_axe_heavy_duty.js" />
     <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_knife_stone.js" />
+    <Content Include="SWGEmuArmorySPA\Controller\AuthenticationController.js" />
     <Content Include="SWGEmuArmorySPA\css\SWGIcons.css" />
     <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="lib\bootstrap\js\bootstrap.js" />
@@ -533,10 +535,13 @@
     <Content Include="SWGEmuArmorySPA\Img\ui_res_water.png" />
     <Content Include="SWGEmuArmorySPA\Img\ui_space_icons.png" />
     <Content Include="SWGEmuArmorySPA\Service\AccountService.js" />
+    <Content Include="SWGEmuArmorySPA\Service\BearerTokenHttpInterceptor.js" />
     <Content Include="SWGEmuArmorySPA\Service\CharacterDetailsService.js" />
     <Content Include="SWGEmuArmorySPA\Service\Services.js" />
     <Content Include="SWGEmuArmorySPA\Service\StructureDetailsService.js" />
+    <Content Include="SWGEmuArmorySPA\Service\TokenService.js" />
     <Content Include="SWGEmuArmorySPA\SWGEmuArmorySPA.js" />
+    <Content Include="SWGEmuArmorySPA\View\authResultView.html" />
     <Content Include="SWGEmuArmorySPA\View\characterView.html" />
     <Content Include="SWGEmuArmorySPA\View\inventoryView.html" />
     <Content Include="SWGEmuArmorySPA\View\Inventory\Armor\ArmorInventoryItem.html" />
