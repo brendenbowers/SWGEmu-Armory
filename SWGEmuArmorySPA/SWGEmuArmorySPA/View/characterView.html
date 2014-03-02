@@ -1,6 +1,6 @@
 ﻿
 <div class="container-fluid">
-    <div class="col-md-5 text-center" style="border-right: 2px solid #eee;">
+    <div class="col-sm-5 text-center" style="border-right: 2px solid #eee;">
         <div style="border-bottom: 1px solid #eee; margin-bottom: 5px;">
             <h1 style="">{{characterDetails.firstname}}</h1>
             <h3 ng-hide="characterDetails.title == ''">{{ characterDetails.title }}</h3>
@@ -9,29 +9,29 @@
             <div class="container-fluid fill" scene-3d render-3d-complete fov="45" near="0.1" far="20000" mesh-path="{{ characterDetails.appearance_file | meshPath }}" cam-x="-0.5" cam-y="0.1" cam-z="0"></div>
         </div>
     </div>
-    <div class="col-md-5" style="overflow-y: auto; max-height: 100%;">
+    <div class="col-sm-5" style="overflow-y: auto; max-height: 100%;">
         <h3 style="border-bottom: 1px solid #eee">Base Stats</h3>
         <div class="row">
-            <span class="col-md-2 text-right">Health:</span>
-            <span class="col-md-3">{{characterDetails.base_health}}</span> 
+            <span class="col-sm-2 text-right">Health:</span>
+            <span class="col-sm-3">{{characterDetails.base_health}}</span> 
         </div>
         <div class="row">
-            <span class="col-md-2 text-right">Action:</span>
-            <span class="col-md-3">{{characterDetails.base_action}}</span>
+            <span class="col-sm-2 text-right">Action:</span>
+            <span class="col-sm-3">{{characterDetails.base_action}}</span>
         </div>
         <div class="row">
-            <span class="col-md-2 text-right">Mind:</span>
-            <span class="col-md-3">{{characterDetails.base_mind}}</span>
+            <span class="col-sm-2 text-right">Mind:</span>
+            <span class="col-sm-3">{{characterDetails.base_mind}}</span>
         </div>
 
         <h3 style="border-bottom: 1px solid #eee">Credits</h3>
         <div class="row">
-            <span class="col-md-2 text-right">Cash:</span>
-            <span class="col-md-3">{{characterDetails.cash_credits}}</span>
+            <span class="col-sm-2 text-right">Cash:</span>
+            <span class="col-sm-3">{{characterDetails.cash_credits}}</span>
         </div>
         <div class="row">
-            <span class="col-md-2 text-right">Bank:</span>
-            <span class="col-md-3">{{characterDetails.bank_credits}}</span>
+            <span class="col-sm-2 text-right">Bank:</span>
+            <span class="col-sm-3">{{characterDetails.bank_credits}}</span>
         </div>
         <h3 style="border-bottom: 1px solid #eee">Biography</h3>
         <p>{{characterDetails.biography}}</p>

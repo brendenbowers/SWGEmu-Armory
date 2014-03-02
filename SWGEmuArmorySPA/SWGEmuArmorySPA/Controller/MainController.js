@@ -25,6 +25,17 @@ module.controller('mainController', ['$scope', '$rootScope', '$location', '$wind
                 $http.defaults.headers.common.Authorization = token.token_type + ' ' + token.access_token;
                 $rootScope.selectedCharacter = null;
                 $rootScope.loggedIn = true;
+
+                var previouslySelectedCharacter = localStorageService.get('selectedCharacterOID');
+                if (previouslySelectedCharacter != null) {
+                    
+                    angular.forEach($rootScope.accounts.characters, function (character) {
+                        if (character.character_oid == previouslySelectedCharacter) {
+                            $rootScope.selectedCharacter = character;
+                            return;
+                        }
+                    });
+                }
             }
 
         };
@@ -36,10 +47,11 @@ module.controller('mainController', ['$scope', '$rootScope', '$location', '$wind
 
     $rootScope.$watch('selectedCharacter', function (newValue, oldValue) {
 
-        if (typeof (newValue.character_oid) === 'undefined') {
+        if (angular.isUndefined(newValue.character_oid)) {
             $rootScope.characterDetails = null;
         }
         else {
+            localStorageService.add('selectedCharacterOID', newValue.character_oid);
             characterDetailsService.getCharacterDetailsByOID(newValue.character_oid).then(function (data) {
                 $rootScope.characterDetails = data.data[0];
             });
@@ -73,6 +85,13 @@ module.controller('mainController', ['$scope', '$rootScope', '$location', '$wind
         $rootScope.selectedCharacter = selectedCharacter;
     };
 
+    $scope.logout = function () {
+
+        var token = localStorageService.get('oauthToken');
+        
+        localStorageService.clearAll();
+        $window.location = 'http://localhost:59798/auth/logout/' + (token != null ? token.access_token : '');
+    };
 
     if ($location.path().indexOf('authenticate') == -1) {
         //some initialization

@@ -8,25 +8,28 @@ module.config(['$routeProvider',function ($routeProvider)
         {
             templateUrl: '/SWGEmuArmorySPA/View/characterView.html',
             controller: 'characterDetailsController'
-        });
-    $routeProvider.when('/inventory/:characterIdOrName?',
+        })
+        .when('/inventory/:characterIdOrName?',
         {
             templateUrl: '/SWGEmuArmorySPA/View/inventoryView.html',
             controller: 'characterDetailsController'
-        });
-    $routeProvider.when('/character/:characterIdOrName/structures/:structureId?',
-    {
-        templateUrl: '/SWGEmuArmorySPA/View/structuresView.html',
-        controller: 'structureDetailsController'
-    });
-    $routeProvider.when('/structures',
+        })
+        .when('/character/:characterIdOrName/structures/:structureId?',
         {
             templateUrl: '/SWGEmuArmorySPA/View/structuresView.html',
             controller: 'structureDetailsController'
-        });
-    $routeProvider.when('/authenticate', 
+        })
+        .when('/structures',
+        {
+            templateUrl: '/SWGEmuArmorySPA/View/structuresView.html',
+            controller: 'structureDetailsController'
+        })
+        .when('/authenticate',
         {
             templateUrl: '/SWGEmuArmorySPA/View/authResultView.html',
             controller: 'authenticationController'
+        })
+        .otherwise({
+            redirectTo: '/character',
         });
 }]);
