@@ -70,7 +70,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="mainController">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainController">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -78,40 +78,25 @@
             </div>
             <ul class="nav navbar-nav" role="navigation">
                 <li ng-class="{active: isActive('/character')}">
-                    <a href="#character"><i class="swgicon-ledger"></i> Character</a>
+                    <a href="#character"><i class="swgicon-ledger swgicon-dark"></i> Character</a>
                 </li>
                 <li ng-class="{active: isActive('/inventory')}">
-                    <a href="#inventory"><i class="swgicon-inventory"></i> Inventory</a>
+                    <a href="#inventory"><i class="swgicon-inventory swgicon-dark"></i> Inventory</a>
                 </li>
                 <li ng-class="{active: isActive('/structures')}">
-                    <a href="#structures"><i class="swgicon-datapad"></i> Structures</a>
+                    <a href="#structures"><i class="swgicon-datapad swgicon-dark"></i> Structures</a>
                 </li>
             </ul>
             <ul ng-hide="loggedIn" class="nav navbar-nav pull-right" role="navigation">
                 <li>
-                    <a href="http://localhost:59798/token?response_type=token&client_id=swgemu_armory" target="_blank"><i class="swgicon-lockedhome"></i> Login</a>
+                    <a href="http://localhost:59798/token?response_type=token&client_id=swgemu_armory" target="_blank"><i class="swgicon-lockedhome swgicon-dark"></i> Login</a>
                 </li>
             </ul>
             <ul ng-show="loggedIn" class="nav navbar-nav pull-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span ng-show="selectedCharacter">
-                            <span class="container-fluid col-md-10">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <i class="glyphicon glyphicon-question-sign glyphicon-2x white"></i>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="row">
-                                            {{selectedCharacter.firstname}}
-                                        </div>
-                                        <div class="row">
-                                            {{selectedCharacter.galaxy_name}}
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1"><b class="caret"></b></div>
-                                </div>
-                            </span>
+                            {{selectedCharacter.firstname}} ({{selectedCharacter.galaxy_name}})<b class="caret"></b>
                         </span> 
                         <span ng-hide="selectedCharacter">
                             Select Character <b class="caret"></b>
