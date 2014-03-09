@@ -3,13 +3,13 @@
 
 var module = angular.module('SWGEmuArmorySPA.Service');
 
-module.service('AccountService', ['$http', function ($http) {
+module.service('AccountService', ['$http', 'endpoints', function ($http, endpoints) {
     return {
         getAccountByUsername: function (username) {
-            return $http.get('http://localhost:59798/account', { params: { username: username } });
+            return $http.get(endpoints.apiHost + '/account', { params: { username: username } });
         },
         getAccountByAccountID : function(accountID) {
-            return $http.get('http://localhost:59798/account', { params: { account_id: accountID } });
+            return $http.get(endpoints.apiHost + '/account', { params: { account_id: accountID } });
         }
     };
 }]);

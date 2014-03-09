@@ -3,14 +3,14 @@
 
 var module = angular.module('SWGEmuArmorySPA.Service');
 
-module.service('TokenService', ['$http', function ($http) {
+module.service('TokenService', ['$http', 'endpoints', function ($http, endpoints) {
     return {
         getTokenInfo: function (token) {
             if (angular.isObject(token)) {
                 token = token.access_token;
             }
 
-            return $http.get('http://localhost:59798/tokeninfo/' + token);
+            return $http.get(endpoints.oauth2LoginEndpoint + '/tokeninfo/' + token);
         }
     };
 }]);

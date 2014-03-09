@@ -475,6 +475,8 @@
     <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_2h_sword_maul_s01.js" />
     <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_axe_heavy_duty.js" />
     <Content Include="SWGEmuArmorySPA\3dmodels\wp_mle_knife_stone.js" />
+    <Content Include="SWGEmuArmorySPA\Config\Configs.js" />
+    <Content Include="SWGEmuArmorySPA\Config\Settings.js" />
     <Content Include="SWGEmuArmorySPA\Controller\AuthenticationController.js" />
     <Content Include="SWGEmuArmorySPA\css\SWGIcons.css" />
     <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />

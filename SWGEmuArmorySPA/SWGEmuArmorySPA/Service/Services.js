@@ -1,1 +1,1 @@
-﻿angular.module('SWGEmuArmorySPA.Service', ['LocalStorageModule']);
+﻿angular.module('SWGEmuArmorySPA.Service', ['LocalStorageModule', 'SWGEmuArmorySPA.Config']);

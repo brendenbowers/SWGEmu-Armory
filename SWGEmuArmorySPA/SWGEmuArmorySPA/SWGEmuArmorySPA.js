@@ -1,6 +1,6 @@
 ﻿/// <reference path="../lib/angular-1.2.10/angular.js" />
 
-var module = angular.module('SWGEmuArmorySPA', ['ngRoute', 'LocalStorageModule', 'ui.bootstrap', 'SWGEmuArmorySPA.Service', 'SWGEmuArmorySPA.Controller', 'SWGEmuArmorySPA.Filter', 'SWGEmuArmorySPA.Directive']);
+var module = angular.module('SWGEmuArmorySPA', ['ngRoute', 'LocalStorageModule', 'ui.bootstrap', 'SWGEmuArmorySPA.Service', 'SWGEmuArmorySPA.Controller', 'SWGEmuArmorySPA.Filter', 'SWGEmuArmorySPA.Directive', 'SWGEmuArmorySPA.Config']);
 
 module.config(['$routeProvider',function ($routeProvider)
 {

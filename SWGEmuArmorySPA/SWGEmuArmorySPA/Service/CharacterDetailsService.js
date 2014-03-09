@@ -3,13 +3,13 @@
 
 var module = angular.module('SWGEmuArmorySPA.Service');
 
-module.service('CharacterDetailsService', ['$http', function ($http) {
+module.service('CharacterDetailsService', ['$http', 'endpoints', function ($http, endpoints) {
     return {
         getCharacterDetailsByOID: function (characterOID) {
-            return $http.get('http://localhost:59798/account/characters', { params: { character_oid: characterOID } });
+            return $http.get(endpoints.apiHost + '/account/characters', { params: { character_oid: characterOID } });
         },
         getCharacterDetailsByName: function (firstname) {
-            return $http.get('http://localhost:59798/account/characters', { params: { firstname: firstname } });
+            return $http.get(endpoints.apiHost + '/account/characters', { params: { firstname: firstname } });
         },
     };
 }]);

@@ -5,7 +5,10 @@
 
 var module = angular.module('SWGEmuArmorySPA.Controller');
 
-module.controller('mainController', ['$scope', '$rootScope', '$location', '$window', '$http', 'localStorageService', 'TokenService', 'AccountService', 'CharacterDetailsService', 'StructureDetailsService', function ($scope, $rootScope, $location, $window, $http, localStorageService, tokenService, accountService, characterDetailsService, structureDetailsService) {
+module.controller('mainController', ['$scope', '$rootScope', '$location', '$window', '$http', 'localStorageService', 'TokenService', 'AccountService', 'CharacterDetailsService', 'StructureDetailsService', 'endpoints',
+    function ($scope, $rootScope, $location, $window, $http, localStorageService, tokenService, accountService, characterDetailsService, structureDetailsService, endpoints) {
+
+        $rootScope.endpoints = endpoints;
 
     $rootScope.loggedIn = false;
 
@@ -90,7 +93,7 @@ module.controller('mainController', ['$scope', '$rootScope', '$location', '$wind
         var token = localStorageService.get('oauthToken');
         
         localStorageService.clearAll();
-        $window.location = 'http://localhost:59798/auth/logout/' + (token != null ? token.access_token : '');
+            $window.location = endpoints.oauth2LogoutURL + (token != null ? token.access_token : '');
     };
 
     if ($location.path().indexOf('authenticate') == -1) {

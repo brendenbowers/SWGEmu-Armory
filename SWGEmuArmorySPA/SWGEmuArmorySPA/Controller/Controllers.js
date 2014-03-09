@@ -1,1 +1,1 @@
-﻿angular.module('SWGEmuArmorySPA.Controller', ['SWGEmuArmorySPA.Service']);
+﻿angular.module('SWGEmuArmorySPA.Controller', ['SWGEmuArmorySPA.Service', 'SWGEmuArmorySPA.Config']);
