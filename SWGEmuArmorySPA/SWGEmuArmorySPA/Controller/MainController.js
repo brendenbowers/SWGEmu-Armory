@@ -17,15 +17,12 @@ module.controller('mainController', ['$scope', '$rootScope', '$location', '$wind
         var handleTokenResponse = function (data) {
             if (data.status == 302 || data.status == 200) {
                 var owner = data.data.owner;
-                $rootScope.accounts = {
-                    created: owner.attributes.created[0],
-                    active: owner.attributes.active[0],
-                    username: owner.attributes.username[0],
-                    account_id: owner.attributes.account_id[0],
-                    characters: owner.attributes.characters,
-                };
 
                 $http.defaults.headers.common.Authorization = token.token_type + ' ' + token.access_token;
+
+                    accountService.getAccountByAccountID(owner.id).then(function (data) {
+                        $rootScope.accounts = data.data[0];
+
                 $rootScope.selectedCharacter = null;
                 $rootScope.loggedIn = true;
 
@@ -39,6 +36,7 @@ module.controller('mainController', ['$scope', '$rootScope', '$location', '$wind
                         }
                     });
                 }
+                    });
             }
 
         };
